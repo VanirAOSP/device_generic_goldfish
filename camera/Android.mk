@@ -69,6 +69,8 @@ else
 LOCAL_MODULE := camera.goldfish
 endif
 
+LOCAL_CFLAGS += -fno-strict-aliasing -Wno-error=strict-aliasing  
+
 include $(BUILD_SHARED_LIBRARY)
 
 #################################################################
